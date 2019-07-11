@@ -1,9 +1,10 @@
-<html>
-  <form action="/salva_produto.php" method="post">
-    nome: <input type="text" name="nome"/><br />
-    Preço: <input type="number" name="preco"/><br />
+<?php include("cabecalho.php"); ?>
 
-    <input type="submit" value="cadastrar" />
-    </form>
+<form action="/salva_produto.php" method="post">
+  Nome: <input type="text" name="nome"/><br />
+  Preço: <input type="number" name="preco"/><br />
 
-</HTML>
+  <input type="submit" value="Cadastrar" />
+</form>
+
+<?php include("rodape.php"); ?>
