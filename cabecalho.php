@@ -13,8 +13,10 @@
           </div>
         <div>
           <ul class="nav navbar-nav">
+          <li><a href="/listar_produtos.php">Produtos</a></li>
           <li><a href="/cadastro_produto.php">Cadastro de Produtos</a></li>
           <li><a href="/cadastro_categoria.php">Cadastro de Categorias</a></li>
+          <li><a href="/listar_categoria.php">Categorias</a></li>
           </ul>
         </div>
       </div>
