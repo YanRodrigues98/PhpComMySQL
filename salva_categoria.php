@@ -8,10 +8,10 @@ $nome = $_POST["nome"];
 $descricao = $_POST["descricao"];
 
 
-    if(insereCategoria ($conexao, $nome, $descricao)){
-      echo "<p class='text-success'> A categoria $nome - $descricao, foi cadastrada</p>";
-}   else{
-    echo "<p class='text-success'>Ocorreu um erro ao cadastrar categoria.</p>";
+  if(insereCategoria($conexao, $nome, $descricao)){
+  header ("location: Cadastro_categoria.php?cadastrou=true&nome={$nome}&preco={$descricao}");
+  } else {
+  header ("location: Cadastro_categoria.php?cadastrou=false");
 
 }
 ?>

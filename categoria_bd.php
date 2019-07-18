@@ -17,4 +17,9 @@ function insereCategoria ($conexao, $nome, $descricao){
   return $resultadoDaCategoria;
 
 }
+
+  function apagaCategoria($conexao, $id){
+    $query = "DELETE FROM Categoria WHERE ID = {$id}";
+    return mysqli_query($conexao, $query);
+  }
 ?>

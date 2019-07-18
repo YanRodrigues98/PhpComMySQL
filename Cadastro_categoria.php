@@ -1,5 +1,33 @@
 
 <?php include("cabecalho.php"); ?>
+<?php
+
+if(isset($_GET['removeu'])){
+  $removeu = $_GET["removeu"];
+
+
+if($removeu) {
+  echo "<p class='text-success'> Categoria removida!</p>";
+} else {
+  echo "<p class='text-danger'> Ocorreu um problema ao remover a categoria</p>";
+  }
+}
+
+if(isset($_GET['cadastrou'])){
+  $cadastrou = $_GET["cadastrou"];
+  $nomeCadastrado = $_GET['nome'];
+
+
+  if($cadastrou) {
+    echo "<p class='text-success'> A categoria $nomeCadastrado foi cadastrada com sucesso!</p>";
+  } else {
+    echo "<p class='text-danger'> Ocorreu um problema ao cadastarar a categoria</p>";
+  }
+}
+
+
+?>
+
 <form action="/salva_categoria.php" method="post">
   <table class="table">
     <tr>

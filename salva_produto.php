@@ -9,9 +9,9 @@
 
 
     if(insereProduto($conexao, $nome, $preco)){
-    echo "<p class='alert-success'> O produto $nome, no valor $preco foi cadastrado!</p>";
+    header ("location: cadastro_produto.php?cadastrou=true&nome={$nome}&preco={$preco}");
   } else {
-    echo "<p class='alert-danger'> Ocorreu um problema ao cadastrar o produto.</p>";
+    header ("location: cadastro_produto.php?cadastrou=false");
   }
 ?>
 <?php include("rodape.php"); ?>

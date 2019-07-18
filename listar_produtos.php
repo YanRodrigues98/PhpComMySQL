@@ -9,6 +9,7 @@
   <tr>
     <td><?= $produto['nome']?></td>
     <td><?= $produto['preco']?></td>
+    <td><a href="remove_produto.php?id=<?= $produto['id'] ?>" class="text-danger">Remover</a></td>
   </tr>
   <?php
   }
