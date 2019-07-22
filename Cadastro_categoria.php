@@ -1,5 +1,7 @@
 
 <?php include("cabecalho.php"); ?>
+<?php include("bd.php"); ?>
+<?php include("categoria_bd.php"); ?>
 <?php
 
 if(isset($_GET['removeu'])){

@@ -5,13 +5,11 @@
 
 $id = $_GET["id"];
 
+if(apagaProduto($conexao, $id)){
+  header("Location: cadastro_produto.php?removeu=true");
+} else {
+  header("Location: cadastro_produto.php?removeu=false");
+}
 
-  if(apagaProduto($conexao, $id)){
-    header("location: cadastro_produto.php?removeu=true");
-}   else{
-    header("location: cadastro_produto.php?removeu=false");
-
- }
-
- ?>
+?>
 <?php include("rodape.php"); ?>

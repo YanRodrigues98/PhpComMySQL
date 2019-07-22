@@ -1,5 +1,4 @@
 <?php
-
 function listarcategoria($conexao){
     $categorias = array();
     $query = "SELECT * FROM CATEGORIA";
@@ -8,7 +7,8 @@ function listarcategoria($conexao){
       array_push($categorias, $categoria);
     }
     return $categorias;
-}
+  }
+
 
 
 function insereCategoria ($conexao, $nome, $descricao){
