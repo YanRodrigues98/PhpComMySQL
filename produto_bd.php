@@ -28,7 +28,7 @@
   }
 
   function alteraProduto($conexao, $nome, $preco, $id){
-    $query = "UPDATE PRODUTO SET nome = '{$nome}', preco = {$preco} WHERE id = {$id}";
+    $query = "UPDATE PRODUTO SET NOME = '{$nome}', PRECO = {$preco} WHERE id = {$id}";
     return mysqli_query($conexao, $query);
   }
 ?>
